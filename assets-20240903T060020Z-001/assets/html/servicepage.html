@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .title{
+            font-family: "Rubik Mono One", monospace;
+            text-decoration: underline black;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-header {
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .services-header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .services-header .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 5px;
+        }
+
+        .service-section {
+            background-color: rgb(233, 228, 228);
+            border-radius: 10px;
+            box-shadow:0 4px 12px rgba(187, 71, 71, 0.703);
+            margin-bottom: 30px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .service-section-content {
+            display: flex;
+            gap: 210px;
+            align-items: center;
+            font-family: "Itim", cursive;
+        }
+
+        .service-section img {
+            border-radius: 10px;
+            width: 427px;
+            height: 427px;
+
+        }
+
+        .service-section h2 {
+            color: #d42027;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-section ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .service-section ul li {
+            margin-bottom: 8px;
+        }
+
+        .service-section a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-top: 10px;
+            border: 2px solid #000000;
+            color: #d42027;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+        .service-section a:hover{
+            transform: scale(1.1);
+            color: #ffffff;
+        }
+
+        .service-section a:hover {
+            background-color: #d42027;
+            color: white;
+        }
+
+        /* Alternate layout for every other section */
+        .service-section:nth-child(even) .service-section-content {
+            flex-direction: row-reverse;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 14px;
+            color: #666;
+        }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    footer .max-w-7xl {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    footer a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #fff;
+    }
+
+    footer .flex {
+        display: flex;
+        gap: 15px;
+    }
+
+    footer .space-y-3 {
+        margin-bottom: 20px;
+    }
+
+    footer .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    footer .border-t {
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    footer .text-center {
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        footer .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="services-header">
+            <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/land.jpg" alt="Team working on laptops">
+            <div class="title">SERVICES</div>
+        </div>
+
+        <!-- Real Time Projects Section -->
+        <div class="service-section">
+            <div class="service-section-content">
+                <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/real.jpg" alt="Real Time Projects">
+                <div>
+                    <h2 style="font-family: Jost, sans-serif;">REAL TIME PROJECTS</h2>
+                    <ul>
+                        <li>Gain hands-on experience by working on live, real-world projects.</li>
+                        <li>Apply theoretical knowledge to practical scenarios.</li>
+                        <li>Simulate industry challenges to build problem-solving skills...</li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certification Section -->
+        <div class="service-section">
+            <div class="service-section-content">
+                <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/certificate.jpeg" alt="Certification">
+                <div>
+                    <h2>CERTIFICATION</h2>
+                    <ul>
+                        <li>Earn industry-recognized certifications in various IT domains.</li>
+                        <li>Validate your skills and expertise with formal credentials.</li>
+                        <li>Increase your credibility with potential employers...</li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume Building Section -->
+        <div class="service-section">
+            <div class="service-section-content">
+                <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/resume.jpeg" alt="Resume Building">
+                <div>
+                    <h2>RESUME BUILDING</h2>
+                    <ul>
+                        <li>Receive personalized guidance to create a professional resume.</li>
+                        <li>Highlight your skills, experiences, and achievements effectively.</li>
+                        <li>Tailor your resume to align with your career goals...</li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24/7 Problem Solutions Section -->
+        <div class="service-section">
+            <div class="service-section-content">
+                <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/24.jpeg" alt="24/7 Problem Solutions">
+                <div>
+                    <h2>24/7 PROBLEM SOLUTIONS</h2>
+                    <ul>
+                        <li>Access round-the-clock support for any learning challenges.</li>
+                        <li>Get immediate help with technical issues and project roadblocks.</li>
+                        <li>Receive guidance on difficult concepts and assignments...</li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT Support Section -->
+        <div class="service-section">
+            <div class="service-section-content">
+                <img src="/Users/ravindranathdevineni/Desktop/GRK IT club/services page images/it.webp" alt="IT Support">
+                <div>
+                    <h2>IT SUPPORT</h2>
+                    <ul>
+                        <li>Enjoy reliable IT support to ensure a smooth learning experience.</li>
+                        <li>Get assistance with software troubleshooting and technical issues.</li>
+                        <li>Receive guidance on using the latest tools and technologies...</li>
+                    </ul>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="space-y-3">
+                    <h3 class="text-lg font-semibold">About Us</h3>
+                    <p class="text-sm text-gray-400">We are dedicated to providing top-notch services and products to our valued customers.</p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="#" class="text-sm text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-semibold">Contact Information</h3>
+                    <p class="text-sm text-gray-400">Flat #3, Ground, VRKH, vivekananda Layout, Chandra Layout, Marathahalli, Bengaluru, Karnataka560037</p>
+                    <p class="text-sm text-gray-400">Phone: +91 7569245557</p>
+                    <p class="text-sm text-gray-400">Email: grkitclub@gmIal.com</p>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-lg font-semibold">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+                <p class="text-sm text-gray-400">&copy; 2024 GRK IT Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
